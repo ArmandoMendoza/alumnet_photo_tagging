@@ -1,0 +1,1 @@
+**Alumnet Photo Tagging plugin**
