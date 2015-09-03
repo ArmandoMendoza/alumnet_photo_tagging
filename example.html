@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Alumnet Photo Taggin</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/alumnet_photo_tagging.js"></script>
+<link rel="stylesheet" type="text/css" href="css/alumnet_photo_tagging.css" media="all">
+</head>
+  <body>
+    <script>
+      $(document).ready(function () {
+          $('img').photo_tagging({
+            tags: [{id: 1, text: "Armando", posX: 407, posY: 89}, {id: 2, text: "Spider", posX: 511, posY: 309}],
+            // addCallback: function(id, text, posX, posY) { console.log(id, posX, posY); }
+          });
+          window.photoTagging = $('img').data('photoTagging');
+      });
+    </script>
+    <img src="image.jpg" style="width: 800px; height: 600px;">
+  </body>
+
+</html>
